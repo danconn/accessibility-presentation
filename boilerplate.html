@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 
-	<title>Your deck.js Presentation</title>
+	<title>Accessibile Web Development</title>
 	
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="core/deck.core.css">
@@ -32,15 +32,325 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<h1>Slide</h1>
+	<h1>Accessibile Web Development<br>(Section 508)</h1>
 </section>
 
 <section class="slide">
-	<h1>Content</h1>
+	<h2>Goals</h2>
+	<ul>
+		<li>
+			Define accessibility
+		</li>
+		<li>
+			Explain why you should be interested
+		</li>
+		<li>
+			Describe the beneficiaries
+		</li>
+		<li>
+			Introduce concepts and buzzwords
+		</li>
+		<li>
+			Demonstrate development and testing tools
+		</li>
+	</ul>
 </section>
 
 <section class="slide">
-	<h1>Here</h1>
+	<h2>What is accessibility?</h2>
+	<p class="slide">
+		Accessibility includes but is not limited
+		to Section 508 and is defined as...
+	</p>
+	<blockquote class="slide">
+		The inclusive practice of making websites usable by people of all abilities and disabilities.
+	</blockquote>
+</section>
+
+<section class="slide">
+	<h2>Why should I be interested?</h2>
+	<ul>
+		<li>Legal</li>
+		<li>Commercial</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Why should I be interested?</h2>
+	<h3>Legal</h3>
+	<h4><a href="http://webaim.org/articles/laws/usa/">Overview of U.S. law</a></h4>
+	<ul>
+		<li>The Rehabiliation Act
+			<ul>
+				<li>Section 508</li>
+				<li class="slide">Section 504
+					<blockquote style="font-size:80%;">
+						No otherwise qualified individual with a disability in the United States... shall, solely by reason of her or his disability, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.
+					</blockquote>
+				</li>
+			</ul>
+		</li>
+		<li class="slide">The Americans with Disabilities Act (ADA)</li>
+	</ul>
+	<ul class="slide">
+		<li>Numerous State Laws</li>
+		<li>International Laws</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Why should I be interested?</h2>
+	<h3>Legal</h3>
+	<h4>ADA case law</h4>
+	<ul>
+		<li><a href="http://www.dralegal.org/impact/cases/national-federation-of-the-blind-nfb-et-al-v-target-corporation">Target v. National Federation for the Blind (NFB)</a></li>
+		<li><a href="http://arstechnica.com/tech-policy/2010/01/lawsuit-over-kindle-navigation-by-visually-impaired-settled/">Arizona State v. NFB and American Council of the Blind (ACB)</li>
+		<li><a href="http://www.educause.edu/blogs/slworona/google-apps-and-national-federation-blind">New York University and Northwestern University v. NFB</a> - Google apps</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Why should I be interested?</h2>
+	<h3>Commercial</h3>
+	<h4>Population Size</h4>
+	<blockquote class="slide">
+		The combined populations of the greater metro areas of Los Angeles and New York City.
+	</blockquote>
+	<h4>SEO benefits</h4>
+	<blockquote class="slide">
+		The Google search engine is the biggest blind user on the web.
+	</blockquote>
+</section>
+
+<section class="slide">
+	<h2>Why should I be interested?</h2>
+	<h3>Commercial</h3>
+	<h4>Better user experience for all users...</h4>
+	<ul>
+		<li>Page structure</li>
+		<li>Simplified Language</li>
+		<li>Keyboard use</li>
+		<li>Temporarily disabled</li>
+		<li>Aging Population</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Describe the beneficiaries</h2>
+	<ul>
+		<li>Common Disabilities</li>
+		<li>Assistive Technology</li>
+		<li>Surveys</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Describe the beneficiaries</h2>
+	<h3>Common Disabilities</h3>
+	<ul>
+		<li>Visual - blindness, color blindness, low vision</li>
+		<li>Audatory - deafness, partial deafness, hard of hearing</li>
+		<li>Motor</li>
+		<li>Seizures</li>
+		<li>Cognitive - dyslexia, ADHD</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Describe the beneficiaries</h2>
+	<h3>Assistive Technology</h3>
+	<div>
+		<h4>Common Assistive</h4>
+		<ul>
+			<li>Screen Readers</li>
+			<li>Screen Magnifiers</li>
+			<li>Keyboard</li>
+			<li>Mobile Phones/Tablets</li>
+		</ul>
+	</div>
+	<div>
+		<h4>Other</h4>
+		<ul>
+			<li>Refreshable Braille</li>
+			<li>Oversized trackball mouse</li>
+			<li>Thousands more...</li>
+		</ul>
+	</div>
+</section>
+
+<section class="slide">
+	<h2>Describe the beneficiaries</h2>
+	<h3>Surveys</h3>
+	<p>
+		Trends from from WebAIM surveys of
+		<a href="http://webaim.org/projects/lowvisionsurvey/">low vision</a>
+		and <a href="http://webaim.org/projects/screenreadersurvey4/">screenreader</a>
+		users.
+	</p>
+	<ul>
+		<li>
+			Indicate screenreader and low vision users
+			are technically saavy
+		</li>
+		<li>
+			Most use Internet Explorer with JAWS
+		</li>
+		<li>Most use a mobile device</li>
+		<li>Most mobile users use an iOS device</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Introduce concepts and buzzwords</h2>
+	<ul>
+		<li>WCAG</li>
+		<li>WAI-ARIA</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Introduce concepts and buzzwords</h2>
+	<h3>WCAG</h3>
+	<dl>
+		<dt>
+			<a href="http://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG)</a> - "wih-cag"
+		</dt>
+		<dd>A set of stepped guidelines created by the W3C for authoring accessible Web content.</dd>
+		<dd>
+			Section 508 standards were based on WCAG 1.0 and 
+			<a href="http://www.access-board.gov/508.htm">revisions will be based on WCAG 2.0 AA</a>.
+		</dd>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Introduce concepts and buzzwords</h2>
+	<h3>WCAG</h3>
+	<h4>POUR</h4>
+	<ul>
+		<li><strong>P</strong><span class="slide">erceivable</span></li>
+		<li><strong>O</strong><span class="slide">perable</span></li>
+		<li><strong>U</strong><span class="slide">nderstandable</span></li>
+		<li><strong>R</strong><span class="slide">obust</span></li>
+	</ul>
+	<p>
+		<a href="http://webaim.org/standards/wcag/checklist">Recommedations for implementing POUR Web content</a>
+	</p>
+</section>
+
+<section class="slide">
+	<h2>Introduce concepts and buzzwords</h2>
+	<h3>WAI-ARIA</h3>
+	<dl>
+		<dt>
+			<a href="http://www.w3.org/WAI/intro/wcag.php">Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)</a> - "ah-ree-uh"
+		</dt>
+		<dd>
+			It defines a way to make Web content and Web applications more accessible to people with disabilities.
+		</dd>
+		<dd>
+			It especially helps with dynamic content and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
+		</dd>
+	</dl>
+</section>
+
+<section class="slide">
+	<h2>Introduce concepts and buzzwords</h2>
+	<h3>WAI-ARIA</h3>
+	<h4>Examples</h4>
+	<ul>
+		<li>
+			<a href="http://devfiles.myopera.com/articles/735/example.html">Drag and Drop</a>
+		</li>
+		<li>
+			<a href="http://html.cita.illinois.edu/nav/form/aria/index.php?example=3">Forms</a>
+		</li>
+		<li>
+			<a href="http://hanshillen.github.io/jqtest/#goto_slider">Numerous other examples</a>
+		</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Demonstrate development and testing tools</h2>
+	<h3>Browser Plugins</h3>
+	<ul>
+		<li>
+			Web Developer Tools (WDT) -
+			<a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/">
+				Firefox
+			</a>
+			|
+			<a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=en">
+				Chrome
+			</a>
+		</li>
+		<li>
+			<a href="http://www.colorzilla.com/">ColorZilla</a> 
+			with
+			<a href="http://webaim.org/resources/contrastchecker/">WebAIM's color contrast checker</a>
+		</li>
+		<li><a href="http://wave.webaim.org/toolbar/">WAVE</a></li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Demonstrate development and testing tools</h2>
+	<h3>Screenreaders</h3>
+	<ul>
+		<li>VoiceOver - <a href="http://webaim.org/articles/voiceover/">Evaluation Tutorial</a>
+			<p>Command + F5 or Settings > General > Accessibility on iOS</p>
+		</li>
+		<li><a href="http://www.nvaccess.org/">Non-Visual Desktop Access (NVDA)</a> - <a href="http://webaim.org/articles/nvda/">Evaluation Tutorial</a></li>
+		<li>
+			<a href="http://www.freedomscientific.com/products/fs/jaws-product-page.asp">Job Access with Speeach (JAWS)</a> -  <a href="http://webaim.org/articles/jaws/">Evaluation Tutorial</a>
+		</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Demonstrate development and testing tools</h2>
+	<h3>Others Tools</h3>
+	<ul>
+		<li>The Keyboard
+			<ul>
+				<li>Tab/Tab + Shift</li>
+				<li>Other custom functionality</li>
+			</ul>
+		</li>
+		<li>
+			<a href="https://www.virtualbox.org">VirtualBox</a> and
+			<a href="http://www.modern.ie/en-us/virtualization-tools#downloads">free VM's from Modern.IE</a>
+		</li>
+		<li>
+			<a href="http://www.automaticsync.com/captionsync/">CaptionSync</a>
+		</li>
+		<li>
+			<a href="http://validator.w3.org">W3C Validator</a>
+		</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Questions?</h2>
+</section>
+
+<section class="slide">
+	<h2>Other Resources</h2>
+	<ul>
+		<li>
+			<a href="http://filamentgroup.com">The Filament Group</a>
+		</li>
+		<li>
+			<a href="http://www.nomensa.com/blog/?s=accessibility">Nomensa</a>
+		</li>
+		<li>
+			<a href="http://webaim.org/standards/508/checklist">Section 508 guideline checklist</a>
+		</li>
+		<li>
+			<a href="http://webaim.org/resources/designers">Web Accessibility for Designer Infographic</a>
+		</li>
+	</ul>
 </section>
 
 <!-- End slides. -->
